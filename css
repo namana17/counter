@@ -1,0 +1,82 @@
+body {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background: linear-gradient(135deg, #a8edea, #fed6e3);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+.card {
+    background: white;
+    padding: 40px 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    width: 350px;
+    animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        transform: translateY(15px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+#value {
+    font-weight: 700;
+    padding-left: 6px;
+}
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    margin: 8px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #f0f0f0;
+    transition: background 0.25s ease, transform 0.15s ease;
+}
+
+button:hover {
+    background: #e5e5e5;
+    transform: translateY(-2px);
+}
+
+button:nth-of-type(1) {
+    background: #e9f9e9;
+    color: #2f8c2f;
+}
+
+button:nth-of-type(2) {
+    background: #fdeaea;
+    color: #cc3b3b;
+}
+
+button:nth-of-type(3) {
+    background: #eef1ff;
+    color: #4b5dd1;
+}
+
+#desc {
+    margin-top: 25px;
+    display: inline-block;
+    padding: 10px 16px;
+    background: #dff3ff;
+    border-radius: 10px;
+    font-size: 17px;
+    color: #064a6b;
+}
